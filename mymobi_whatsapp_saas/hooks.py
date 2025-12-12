@@ -247,3 +247,12 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+fixtures = [
+    "Custom Field",
+    "Property Setter",
+]
+
+override_whitelisted_methods = {
+    "mymobi_whatsapp_saas.mymobi_whatsapp_saas.api.saas_onboarding.saas_onboard":
+        "mymobi_whatsapp_saas.mymobi_whatsapp_saas.api.saas_onboarding.saas_onboard",
+}

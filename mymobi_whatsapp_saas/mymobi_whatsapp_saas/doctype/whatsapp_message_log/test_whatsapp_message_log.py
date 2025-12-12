@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestMyTestDocType(FrappeTestCase):
+class TestWhatsAppMessageLog(FrappeTestCase):
 	pass

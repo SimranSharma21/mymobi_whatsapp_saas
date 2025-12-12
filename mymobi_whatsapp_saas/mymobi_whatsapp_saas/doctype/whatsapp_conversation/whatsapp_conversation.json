@@ -1,26 +1,47 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-12-04 16:47:41.318654",
+ "creation": "2025-12-09 15:15:47.459238",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title"
+  "tenant",
+  "customer",
+  "status",
+  "last_message"
  ],
  "fields": [
   {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "tenant",
+   "fieldtype": "Link",
+   "label": "Tenant",
+   "options": "WhatsApp Tenant"
+  },
+  {
+   "fieldname": "last_message",
+   "fieldtype": "Small Text",
+   "label": "Last Message"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nClosed"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-12-04 16:47:54.768305",
+ "modified": "2025-12-09 15:32:03.455232",
  "modified_by": "Administrator",
  "module": "Mymobi Whatsapp Saas",
- "name": "My Test DocType",
+ "name": "WhatsApp Conversation",
  "owner": "Administrator",
  "permissions": [
   {
